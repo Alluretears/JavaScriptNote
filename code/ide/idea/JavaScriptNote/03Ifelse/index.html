@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button onclick="MyFuction()">Click me</button>
+<p id = demo></p>
+<script>
+    function MyFuction(){
+        var x ="";
+        var time = new Date().getHours();
+        if(time < 10){
+            x = "Good Morning"
+        }else if(time < 20){
+            x = "Good Day"
+        }
+        else{
+           x = "Good Evening"
+        }
+        document.getElementById("demo").innerHTML = x;
+    }
+
+</script>
+
+</body>
+</html>

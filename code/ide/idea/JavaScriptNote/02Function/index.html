@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--函数的使用-->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button onclick="MyFunction('Bill','CEO')">Click Me</button>
+<script>
+    function MyFunction(name,job){
+        alert("Welcome "+name+",the "+job);
+    }
+</script>
+<p id="demo"></p>
+<script>
+    function add(a,b){
+        return a+b;
+    }
+    document.getElementById("demo").innerHTML=add(3,4);
+</script>
+</body>
+</html>

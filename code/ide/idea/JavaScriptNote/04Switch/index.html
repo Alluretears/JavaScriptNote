@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+ <button onclick="MyFuction()">Click me</button>
+ <p id="demo"></p>
+<script>
+    function MyFuction(){
+        var x ="";
+        var day = new Date().getDay();
+        switch (day){
+            case 6:
+                x = "Today is Saturday";
+                break;
+            case 5:
+                x= "Today is Friday";
+                break;
+            case 4:
+                x ="Today is Thursday";
+                break;
+            case 3:
+                x ="Today is Wednesday";
+                break;
+            case 2:
+                x = "Today is Tuesday";
+                break;
+            case 1:
+                x ="Today is Monday";
+                break;
+            case 0:
+                x = "Today is Sunday";
+                break;
+            default:
+                x ="Looking forward to the Weekend";
+        }
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+</body>
+</html>
