@@ -5,7 +5,19 @@
     <title></title>
 </head>
 <body>
-<script></script>
+<p id ="demo"></p>
+<script type="text/javascript">
+/*    cars=["BMW","Volvo","Saab","Ford"];
+    for (var i = 0,len = cars.length;i<len;i++){
+        document.write(cars[i]+"<br>");
+    }*/
+    var person = {fname:"Bill",lname:"Gates",age:56};
+    var text = "";
+    for (var x in person){
+        text = text + person[x] +"<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
 
 </body>
 </html>
